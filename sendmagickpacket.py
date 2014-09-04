@@ -20,8 +20,7 @@ def sendmagicpacket(macs, ipaddr, port):
   
   s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
   s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-  s.sendto(magicpacket, ('10.11.135.255',port))
-  print "OK"
+  s.sendto(magicpacket, (ip,port))
   s.close()
 
 def connected(tag):
@@ -31,7 +30,8 @@ def connected(tag):
     try:
       idm = str(tag.idm).encode("hex")
       mac = data[idm]['macaddr']
-      ip = data[idm]['ipaddr']
+#      ip = data[idm]['ipaddr']
+      ip = '1.1.1.1'
       sendmagicpacket(mac,ip,9)
     except Exception as e:
       print "error: %s" % e
