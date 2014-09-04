@@ -1,6 +1,6 @@
 {
 	"input IDm" : {
-		"macaddr" : "AA:AA:AA:AA:AA:AA"
+		"macaddr" : "AA:AA:AA:AA:AA:AA",
 		"ipaddr" : "1.1.1.1"
 	},
         "input IDm": {
