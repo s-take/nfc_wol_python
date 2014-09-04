@@ -1,0 +1,10 @@
+{
+	"input IDm" : {
+		"macaddr" : "AA:AA:AA:AA:AA:AA"
+		"ipaddr" : "1.1.1.1"
+	},
+        "input IDm": {
+                "macaddr" : "BB:BB:BB:BB:BB:BB",
+                "ipaddr" : "2.2.2.2"
+        }
+}

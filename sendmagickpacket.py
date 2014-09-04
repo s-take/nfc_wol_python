@@ -32,8 +32,6 @@ def connected(tag):
       idm = str(tag.idm).encode("hex")
       mac = data[idm]['macaddr']
       ip = data[idm]['ipaddr']
-      print mac
-      print ip
       sendmagicpacket(mac,ip,9)
     except Exception as e:
       print "error: %s" % e
